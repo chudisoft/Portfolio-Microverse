@@ -33,7 +33,6 @@ button {
   align-items: center;
   justify-content: space-between;
   background-color: #fff;
-  padding-top: 10px;
   padding: 10px;
 }
 
@@ -107,7 +106,8 @@ main {
   color: #344563;
 }
 
-.content > h4, .about-background > h4 {
+.content > h4,
+.about-background > h4 {
   padding-top: 0;
   margin-bottom: 0;
   height: 24px;
@@ -117,10 +117,6 @@ main {
   font-size: 16px;
   line-height: 24px;
   color: #7f8cff;
-}
-
-.content > ul > li, .about-background > ul > li {
-  margin-right: 20px;
 }
 
 .img-social {
@@ -173,12 +169,12 @@ main {
 }
 
 .project-title {
-  font-family: 'Poppins';
+  font-family: 'Poppins', serif;
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
   line-height: 44px;
-  color: #172B4D;
+  color: #172b4d;
 }
 
 .flex-list {
@@ -197,7 +193,7 @@ main {
 
 .project-date-list > li > h5 {
   /* Caption / 1 - Bolder */
-  font-family: 'Poppins';
+  font-family: 'Poppins', serif;
   font-style: normal;
   font-weight: 600;
   font-size: 13px;
@@ -208,16 +204,16 @@ main {
 
 .project-date-list > li > label {
   /* Caption / 1 - Bolder */
-  font-family: 'Poppins';
+  font-family: 'Poppins', serif;
   font-style: normal;
   font-weight: 600;
   font-size: 13px;
   line-height: 16px;
-  color: #7A869A;
+  color: #7a869a;
 }
 
 .project-description {
-  font-family: 'Poppins';
+  font-family: 'Poppins', serif;
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
@@ -237,18 +233,18 @@ main {
 
 .project-button-group > li > button {
   /* Button / Small */
-  font-family: 'Poppins';
+  font-family: 'Poppins', serif;
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
   line-height: 16px;
   letter-spacing: 0.03em;
-  color: #6070FF;
+  color: #6070ff;
 }
 
 .project-button {
   /* Button /Normal */
-  font-family: 'Poppins';
+  font-family: 'Poppins', serif;
   font-style: normal;
   font-weight: 500;
   font-size: 17px;
@@ -258,32 +254,25 @@ main {
   text-align: center;
   letter-spacing: 0.03em;
   background-color: #fefefe;
-  color: #396DF2;
-  border: #396DF2 solid 0.1em;
+  color: #396df2;
+  border: #396df2 solid 0.1em;
   margin-bottom: 1em;
 }
 
-.project-button-group > li > button:hover, .project-button:hover {
-  border: 0.1em solid #000;
-  color: #fff;
-  background-color: #1193f6;
-  border-radius: 1em;
-}
-
 .about-background > h2 {
-  font-family: 'Poppins';
+  font-family: 'Poppins', serif;
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
   line-height: 52px;
   display: flex;
   align-items: center;
-  color: #172B4D;
+  color: #172b4d;
   margin-top: 2em;
 }
 
 .about-background > div > p {
-  font-family: 'Poppins';
+  font-family: 'Poppins', serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -292,9 +281,22 @@ main {
   margin-bottom: 1em;
 }
 
-.about-background > div > button, 
-.about-background > ul {
+.content > ul > li,
+.about-background > ul > li {
+  margin-right: 20px;
+}
+
+.about-background > ul,
+.about-background > div > button {
   margin-top: 1em;
+}
+
+.project-button-group > li > button:hover,
+.project-button:hover {
+  border: 0.1em solid #000;
+  color: #fff;
+  background-color: #1193f6;
+  border-radius: 1em;
 }
 
 .tech-stack {
@@ -313,14 +315,14 @@ main {
 }
 
 .stack-title {
-  font-family: 'Poppins';
+  font-family: 'Poppins', serif;
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
   line-height: 24px;
   display: flex;
   align-items: center;
-  color: #000000;
+  color: #000;
 }
 
 .stack-btn {
@@ -337,7 +339,7 @@ main {
 
 .grid-item-text {
   /* grid-area: box; */
-  font-family: 'Poppins';
+  font-family: 'Poppins', serif;
   font-style: normal;
   font-weight: 500;
   font-size: 15px;
@@ -355,10 +357,8 @@ main {
   margin-bottom: 0.5em;
   background-color: #f0f0f0;
   display: grid;
-  grid-template:
-    'box auto';
+  grid-template: 'box auto';
 }
-
 
 .hidden {
   display: none;
