@@ -2,4 +2,16 @@
   body {
     min-width: 768px !important;
   }
+
+  .card {
+    max-width: 33.33%;
+  }
+  
+  .work-grid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
 }
