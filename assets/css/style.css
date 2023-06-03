@@ -28,6 +28,31 @@ button {
   border-radius: 0.5em;
 }
 
+button:enabled {
+  border: 0.1em solid #7f8cff;
+  background: #fff;
+  color: #6070ff;
+}
+
+button:hover {
+  background: #6070ff;
+  color: #fff !important;
+  border: unset;
+  cursor: pointer;
+}
+
+button:active {
+  background: #2230d2;
+  color: #fff;
+  border: unset;
+}
+
+button:disabled {
+  background: #fff;
+  color: #5e6c84;
+  border: 0.1em solid #e5e5e5;
+}
+
 .navbar {
   display: flex;
   align-items: center;
@@ -232,7 +257,7 @@ main {
   margin-right: 0.3em;
 }
 
-.project-button-group > li > button {
+.project-button-group > li > span {
   /* Button / Small */
   font-family: 'Poppins', serif;
   font-style: normal;
@@ -241,6 +266,16 @@ main {
   line-height: 16px;
   letter-spacing: 0.03em;
   color: #6070ff;
+  background-color: #f0f0f0;
+  border: unset;
+  padding: 0.2em 1em;
+  border-radius: 0.5em;
+  cursor: pointer;
+}
+
+.project-button-group > li > span:hover {
+  color: #6070ff;
+  background-color: #eae9e9;
 }
 
 .project-button {
@@ -291,14 +326,6 @@ main {
 .about-background > ul,
 .about-background > div > button {
   margin-top: 1em;
-}
-
-.project-button-group > li > button:hover,
-.project-button:hover {
-  border: 0.1em solid #000;
-  color: #fff;
-  background-color: #1193f6;
-  border-radius: 1em;
 }
 
 .tech-stack {
