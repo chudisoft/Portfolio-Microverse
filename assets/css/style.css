@@ -131,13 +131,13 @@ main {
 }
 
 .img-social {
-  height: 1.5em;
-  width: 1.5em;
+  height: 1.3em;
+  width: 1.3em;
 }
 
 .img-social:hover {
   transition: 1s all;
-  scale: 2;
+  scale: 1.2;
 }
 
 .home-background {
