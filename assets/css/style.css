@@ -392,3 +392,24 @@ main {
 .hidden {
   display: none;
 }
+
+.contact--section {
+  background-color: #fff;
+  width: 100%;
+}
+
+form {
+  background-image: url(/assets/images/backgrounds/contact\ form\ shapes-mobile.png);
+  display: flex;
+  flex-direction: column;
+  border-top-left-radius: 70px;
+  background: #6070ff;
+  align-items: center;
+  padding-top: 40px;
+  margin-bottom: 0;
+  min-height: 100vh;
+  min-width: 100vw;
+  background-size: 207px;
+  background-position: right 15px;
+  background-repeat: no-repeat;
+}
