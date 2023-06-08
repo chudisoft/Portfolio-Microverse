@@ -36,7 +36,7 @@ button:enabled {
 
 button:hover {
   background: #6070ff;
-  color: #fff !important;
+  color: #fff;
   border: unset;
   cursor: pointer;
 }
@@ -393,23 +393,103 @@ main {
   display: none;
 }
 
-.contact--section {
-  background-color: #fff;
+.contact-section {
+  width: 100%;
+  background-image: url('../images/backgrounds/contact-me.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+}
+
+.contact-background {
+  padding: 2em 2em 0 2em;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5em 0;
+  margin-bottom: 0;
+  background-position: right 15px;
+  background-repeat: no-repeat;
+  max-width: 30em;
+}
+
+.contact-form > h2 {
+  font-family: 'Poppins', serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+}
+
+.contact-form-paragraph {
+  font-family: 'Poppins', serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  color: #ebebff;
+  margin-bottom: 2em;
+}
+
+.contact-form > .input-group > input,
+.contact-form > .input-group > textarea {
+  /* Mono/White */
+  background: #fff;
+  border: 1px solid #cfd8dc;
+  border-radius: 8px;
+  margin-bottom: 1em;
+  padding: 0.5em;
   width: 100%;
 }
 
-form {
-  background-image: url(/assets/images/backgrounds/contact\ form\ shapes-mobile.png);
-  display: flex;
-  flex-direction: column;
-  border-top-left-radius: 70px;
+.contact-form > .input-group > input {
+  min-height: 3em;
+}
+
+.contact-form > .input-group > textarea {
+  min-height: 12em;
+}
+
+.form-footer {
+  width: 100%;
+}
+
+.form-submit-button {
+  background: #fff;
+  box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
+  border-radius: 8px;
+  outline: none;
+  margin: 20px 0;
+  color: #6070ff;
+  padding: 15px;
+  font-size: 17px;
+  cursor: pointer;
+  border: 1px solid #7f8cff;
+}
+
+.form-submit-button:hover {
+  border: 1px solid #7f8cff;
+  border-radius: 8px;
   background: #6070ff;
-  align-items: center;
-  padding-top: 40px;
-  margin-bottom: 0;
-  min-height: 100vh;
-  min-width: 100vw;
-  background-size: 207px;
-  background-position: right 15px;
-  background-repeat: no-repeat;
+  color: #fff;
+}
+
+.form-submit-button:disabled {
+  color: #5e6c84;
+  background: #ffff;
+  border: 1px solid #7f8cff;
+}
+
+.form-submit-button:focus {
+  color: #fff;
+  background: #2230d2;
 }
