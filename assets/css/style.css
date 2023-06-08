@@ -395,14 +395,16 @@ main {
 
 .contact-section {
   width: 100%;
-  background-image: url('../images/backgrounds/contact-me.png');
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: flex;
-  justify-content: center;
+  background-color: #6070FF;
+  border-top-left-radius: 7em;
 }
 
 .contact-background {
+  background-image: url('../images/backgrounds/contact-form-shapes.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-x: right;
+  min-height: 90vh;
   padding: 2em 2em 0 2em;
 }
 
@@ -415,6 +417,10 @@ main {
   background-position: right 15px;
   background-repeat: no-repeat;
   max-width: 30em;
+}
+
+.input-group {
+  width: 100%;
 }
 
 .contact-form > h2 {
@@ -443,16 +449,20 @@ main {
 .contact-form > .input-group > input,
 .contact-form > .input-group > textarea {
   /* Mono/White */
+  font-family: 'Poppins', serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  color: #172B4D;
   background: #fff;
   border: 1px solid #cfd8dc;
   border-radius: 8px;
   margin-bottom: 1em;
   padding: 0.5em;
   width: 100%;
-}
-
-.contact-form > .input-group > input {
-  min-height: 3em;
 }
 
 .contact-form > .input-group > textarea {
