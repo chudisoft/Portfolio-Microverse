@@ -80,6 +80,10 @@ button:disabled {
   cursor: pointer;
 }
 
+.nav-items {
+  display: none;
+}
+
 h1 {
   color: #1193f6;
 }
@@ -100,6 +104,7 @@ main {
 .content {
   min-height: 80vh;
   padding: 0 1em;
+  max-width: 768px;
 }
 
 .content > h1 {
@@ -132,7 +137,7 @@ main {
 }
 
 .content > h4,
-.about-background > h4 {
+.about-details > h4 {
   padding-top: 0;
   margin-bottom: 0;
   height: 24px;
@@ -162,15 +167,19 @@ main {
   border-radius: 0 0 0 5em;
   background-color: #fff;
   min-height: 35em;
+  display: flex;
+  justify-content: center;
 }
 
-.about-background {
+#about {
   margin-bottom: 1em;
   background-color: #fff;
   padding: 1em;
   padding-bottom: 10em;
   min-height: 90vh;
   border-radius: 0 5em 0 0;
+  justify-content: center;
+  display: flex;
 }
 
 .flex-container {
@@ -296,7 +305,7 @@ main {
   padding: 0.5em;
 }
 
-.about-background > h2 {
+.about-details > h2 {
   font-family: 'Poppins', serif;
   font-style: normal;
   font-weight: 700;
@@ -308,7 +317,7 @@ main {
   margin-top: 2em;
 }
 
-.about-background > div > p {
+.about-details > div > p {
   font-family: 'Poppins', serif;
   font-style: normal;
   font-weight: 400;
@@ -319,12 +328,12 @@ main {
 }
 
 .content > ul > li,
-.about-background > ul > li {
+.about-details > ul > li {
   margin-right: 20px;
 }
 
-.about-background > ul,
-.about-background > div > button {
+.about-details > ul,
+.about-details > div > button {
   margin-top: 1em;
 }
 
@@ -389,8 +398,12 @@ main {
   grid-template: 'box auto';
 }
 
-.hidden {
+.hidden, .desktop {
   display: none;
+}
+
+.mobile {
+  display: block;
 }
 
 .contact-section {
@@ -406,6 +419,8 @@ main {
   background-position-x: right;
   min-height: 90vh;
   padding: 2em 2em 0 2em;
+  display: flex;
+  justify-content: center;
 }
 
 .contact-form {
