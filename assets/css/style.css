@@ -26,6 +26,7 @@ button {
   border: unset;
   padding: 0.2em 1em;
   border-radius: 0.5em;
+  transition: transform 1s;
 }
 
 button:enabled {
@@ -39,6 +40,7 @@ button:hover {
   color: #fff;
   border: unset;
   cursor: pointer;
+  transform: perspective(150px)   translateZ(20px);
 }
 
 button:active {
