@@ -51,8 +51,7 @@
     justify-content: center;
   }
 
-  .card,
-  .about-background {
+  .card {
     display: grid;
     grid-template: 'item1 item2';
     max-width: 80%;
@@ -65,7 +64,7 @@
   }
 
   .navbar {
-    padding: 0 10%;
+    padding: 1em 10%;
   }
 
   .project-img {
@@ -78,9 +77,17 @@
     padding-left: 2em;
   }
 
+  .about-background {
+    display: grid;
+    grid-template: 'item1 item1 item2 item2 item2 item2';
+    max-width: 80%;
+    grid-auto-columns: minmax(0, 1fr);
+    grid-auto-flow: column;
+  }
+
   .about-details {
     grid-area: item1;
-    max-width: 50vw;
+    padding: unset;
   }
 
   .about-languages {
@@ -114,6 +121,11 @@
     background-repeat: no-repeat;
     background-size: contain;
     background-position-x: right;
+  }
+
+  .form-footer {
+    display: flex;
+    justify-content: center;
   }
 
   .hidden,
