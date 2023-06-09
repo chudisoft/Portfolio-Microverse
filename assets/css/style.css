@@ -120,9 +120,6 @@ main {
   display: flex;
   align-items: center;
   color: #172b4d;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
 }
 
 .content > div > p {
@@ -518,4 +515,8 @@ main {
 .form-submit-button:focus {
   color: #fff;
   background: #2230d2;
+}
+
+.project-img > img {
+  width: 100%;
 }
