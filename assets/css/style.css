@@ -398,7 +398,8 @@ main {
   grid-template: 'box auto';
 }
 
-.hidden, .desktop {
+.hidden,
+.desktop {
   display: none;
 }
 

@@ -6,7 +6,7 @@
   .menu-icon {
     display: none;
   }
-  
+
   .nav-items {
     display: flex;
   }
@@ -41,8 +41,9 @@
     flex-wrap: wrap;
     justify-content: center;
   }
-  
-  .card, .about-background {
+
+  .card,
+  .about-background {
     display: grid;
     grid-template: 'item1 item2';
     max-width: 80%;
@@ -52,15 +53,15 @@
     grid-area: item1;
     max-width: 100%;
   }
-  
+
   .full {
     max-width: 100%;
   }
-  
+
   .half {
     max-width: 50%;
   }
-  
+
   .work-description {
     grid-area: item2;
     padding-left: 2em;
@@ -81,12 +82,12 @@
   .left {
     grid-area: item1;
   }
-  
+
   .right {
     grid-area: item2;
     padding-left: 0.5em;
   }
-  
+
   .languages {
     display: inline-flex;
   }
@@ -96,7 +97,7 @@
     margin-right: 0.5em;
     min-width: 7em;
   }
-  
+
   .contact-background {
     background-image: url('../images/backgrounds/contact-form-background-shapes.png');
     background-repeat: no-repeat;
@@ -104,7 +105,8 @@
     background-position-x: right;
   }
 
-  .hidden, .mobile {
+  .hidden,
+  .mobile {
     display: none;
   }
 
