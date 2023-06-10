@@ -88,10 +88,6 @@ button:disabled {
 
 h1 {
   color: #1193f6;
-  animation-name: move;
-  animation-duration: 2s;
-  animation-iteration-count:initial;
-  animation-direction: normal;
 }
 
 header > nav > a:hover {
@@ -527,13 +523,22 @@ main {
   width: 100%;
 }
 
+.shake {
+  animation-name: move;
+  animation-duration: 2s;
+  animation-iteration-count: initial;
+  animation-direction: normal;
+}
+
 @keyframes move {
   0% {
     transform: translateX(0);
   }
+
   50% {
     transform: translateX(100px);
   }
+
   100% {
     transform: translateX(0);
   }
