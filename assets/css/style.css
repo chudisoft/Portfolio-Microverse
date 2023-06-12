@@ -26,6 +26,7 @@ button {
   border: unset;
   padding: 0.2em 1em;
   border-radius: 0.5em;
+  transition: transform 1s;
 }
 
 button:enabled {
@@ -39,6 +40,7 @@ button:hover {
   color: #fff;
   border: unset;
   cursor: pointer;
+  transform: perspective(150px)   translateZ(20px);
 }
 
 button:active {
@@ -519,4 +521,25 @@ main {
 
 .project-img > img {
   width: 100%;
+}
+
+.shake {
+  animation-name: move;
+  animation-duration: 2s;
+  animation-iteration-count: initial;
+  animation-direction: normal;
+}
+
+@keyframes move {
+  0% {
+    transform: translateX(0);
+  }
+
+  50% {
+    transform: translateX(100px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
 }

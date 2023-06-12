@@ -1,24 +1,24 @@
 {
   "name": "portfolio-microverse",
   "version": "1.0.0",
-  "description": "Portfolio Microverse Project From Christopher",
+  "description": "<a name=\"readme-top\"></a>\r <div align=\"center\">\r   <img src=\"assets/images/logo.png\" alt=\"logo\" width=\"140\"  height=\"auto\" />\r   <br/>",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/chudisoft/portfolio-microverse.git"
+    "url": "git+https://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@github.com/chudisoft/Portfolio-Microverse.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/chudisoft/portfolio-microverse/issues"
+    "url": "https://github.com/chudisoft/Portfolio-Microverse/issues"
   },
-  "homepage": "https://github.com/chudisoft/portfolio-microverse#readme",
+  "homepage": "https://github.com/chudisoft/Portfolio-Microverse#readme",
   "devDependencies": {
-    "hint": "^7.1.8",
+    "hint": "^7.1.9",
     "stylelint": "^13.13.1",
     "stylelint-config-standard": "^21.0.0",
     "stylelint-csstree-validator": "^1.9.0",
