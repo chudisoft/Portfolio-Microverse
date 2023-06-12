@@ -80,7 +80,7 @@ It also allows the student to showcase what they can do to the future employee.
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-> Project will be deployed later.
+> This Project is deployed at https://chudisoft.github.io/Portfolio-Microverse/
 
 <!-- - [Live Demo Link](https://google.com) -->
 
