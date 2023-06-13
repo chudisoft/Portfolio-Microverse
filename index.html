@@ -135,7 +135,7 @@
               </li>
             </ul>
             <div>
-              <button class="project-button" type="button"
+              <button class="project-button" type="button" title="See project"
                 onclick="return;">
                 See project
               </button>
@@ -204,7 +204,7 @@
               </li>
             </ul>
             <div>
-              <button class="project-button" type="button"
+              <button class="project-button" type="button" title="See project"
                 onclick="return;">
                 See project
               </button>
@@ -276,7 +276,7 @@
               </li>
             </ul>
             <div>
-              <button class="project-button" type="button"
+              <button class="project-button" type="button" title="See project"
                 onclick="return;">
                 See project
               </button>
@@ -346,7 +346,7 @@
               </li>
             </ul>
             <div>
-              <button class="project-button" type="button"
+              <button class="project-button" type="button" title="See project"
                 onclick="return;">
                 See project
               </button>
@@ -405,7 +405,7 @@
             </li>
           </ul>
           <div>
-            <button class="project-button" type="button"
+            <button class="project-button" type="button" title="Get my resume"
               onclick="return;">
               Get my resume
             </button>
@@ -482,18 +482,21 @@
             I’d love to help with it!
           </p>
           <div class="input-group">
-            <input type="text" name="name" id="name"
+            <label for="name" hidden>Name</label>
+            <input type="text" name="name" id="name" title="Name"
               required maxlength="30"
               placeholder="Write your name here">
-            <input type="email" name="email" id="email"
+              <label for="email" hidden>email</label>
+            <input type="email" name="email" id="email" title="email"
               required
               placeholder="Write your email here">
-            <textarea name="message" id="message"
+              <label for="message" hidden>message</label>
+            <textarea name="message" id="message" title="message"
               required maxlength="500"
               placeholder="Write your message here"></textarea>
           </div>
           <div class="form-footer">
-            <button class="form-submit-button" 
+            <button class="form-submit-button" title="Get in touch"
               type="submit">Get in touch</button>
           </div>
         </form>
