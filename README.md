@@ -16,7 +16,7 @@
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
   - [🚀 Live Demo](#live-demo)
-  - [🚀 Project Presentation](#Project-Presentation)
+  - [🚀 Project Presentation](#project-presentation)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
@@ -87,9 +87,9 @@ It also allows the student to showcase what they can do to the future employee.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- Project presentation -->
+<!-- Project Presentation -->
 
-## 🚀 Project Presentation <a name="Project-Presentation"></a>
+## 🚀 Project Presentation <a name="project-presentation"></a>
 
 > Feel free to watch the project presentation at [loom](https://www.loom.com/share/a676e26753bc42259b94e2797629015e)
 
