@@ -16,6 +16,7 @@
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
   - [🚀 Live Demo](#live-demo)
+  - [🚀 Project Presentation](#Project-Presentation)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
@@ -83,6 +84,16 @@ It also allows the student to showcase what they can do to the future employee.
 > This Project is deployed at https://chudisoft.github.io/Portfolio-Microverse/
 
 <!-- - [Live Demo Link](https://google.com) -->
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- Project presentation -->
+
+## 🚀 Project Presentation <a name="Project-Presentation"></a>
+
+> Feel free to watch the project presentation at [loom](https://www.loom.com/share/a676e26753bc42259b94e2797629015e)
+
+<!-- - [Loom](https://www.loom.com/share/a676e26753bc42259b94e2797629015e) -->
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
