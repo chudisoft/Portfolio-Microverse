@@ -86,12 +86,44 @@ button:disabled {
   display: none;
 }
 
-h1 {
-  color: #1193f6;
+.nav-items.show {
+  position: fixed;
+  top: 0;
+  background-color: #6070fff5;
+  width: 100%;
+  left: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  z-index: 10001;
+  padding-left: 0.5em;
+  padding-top: 2em;
 }
 
 header > nav > a:hover {
   text-decoration: underline;
+}
+
+.nav-items.show > a {
+  font-family: 'Poppins', serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
+  color: #fff;
+  cursor: pointer;
+  padding-left: 0.5em;
+  margin-bottom: 1em;
+  text-decoration: none;
+}
+
+.nav-items.show a:first-child {
+  text-align: end;
+  padding-right: 1em;
+}
+
+h1 {
+  color: #1193f6;
 }
 
 .menubar {
@@ -344,11 +376,6 @@ main {
   border-bottom: 0.2em solid #f0f0f0;
   padding: 1em 0.5em;
   margin: 0.1em 0;
-}
-
-.stack-img {
-  /* width: 1em;
-  height: 1em; */
 }
 
 .stack-title {
