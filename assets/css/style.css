@@ -87,7 +87,7 @@ button:disabled {
 }
 
 .nav-items.show {
-  position: absolute;
+  position: fixed;
   top: 0;
   background-color: #6070ff;
   width: 100%;
@@ -371,11 +371,6 @@ main {
   border-bottom: 0.2em solid #f0f0f0;
   padding: 1em 0.5em;
   margin: 0.1em 0;
-}
-
-.stack-img {
-  /* width: 1em;
-  height: 1em; */
 }
 
 .stack-title {
