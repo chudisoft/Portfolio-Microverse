@@ -3,15 +3,27 @@
     min-width: 768px !important;
   }
 
-  .menu-icon {
+  .menu-icon, #nav-close {
     display: none;
   }
 
-  .nav-items {
+  .nav-items, .nav-items.show {
     display: flex;
   }
 
-  .nav-items > a {
+  .nav-items.show {
+    flex-direction: row;
+    position: inherit;
+    background-color: unset;
+    width: unset;
+    height: unset;
+    padding-top: unset;
+    z-index: unset;
+    padding-left: unset;
+    padding-top: unset;
+  }
+
+  .nav-items > a, .nav-items.show > a {
     padding: 3px 5px;
     font-family: 'Poppins', serif;
     font-style: normal;
