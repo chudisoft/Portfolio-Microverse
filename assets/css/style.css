@@ -86,6 +86,33 @@ button:disabled {
   display: none;
 }
 
+.nav-items.show {
+  position: absolute;
+  top: 0;
+  background-color: #6070ff;
+  width: 100%;
+  left: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding-top: 3em;
+  z-index: 10001;
+  padding-left: 0.5em;
+  padding-top: 2em;
+}
+.nav-items.show > a {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
+  color: #fff;
+  cursor: pointer;
+  padding-left: 0.5em;
+  border-bottom: 1px solid var(--accent7-color);
+  margin-bottom: 1em;
+}
+
 h1 {
   color: #1193f6;
 }
