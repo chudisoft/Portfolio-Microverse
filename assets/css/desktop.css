@@ -3,11 +3,13 @@
     min-width: 768px !important;
   }
 
-  .menu-icon, #nav-close {
+  .menu-icon,
+  #nav-close {
     display: none;
   }
 
-  .nav-items, .nav-items.show {
+  .nav-items,
+  .nav-items.show {
     display: flex;
   }
 
@@ -17,13 +19,13 @@
     background-color: unset;
     width: unset;
     height: unset;
-    padding-top: unset;
     z-index: unset;
-    padding-left: unset;
     padding-top: unset;
+    padding-left: unset;
   }
 
-  .nav-items > a, .nav-items.show > a {
+  .nav-items > a,
+  .nav-items.show > a {
     padding: 3px 5px;
     font-family: 'Poppins', serif;
     font-style: normal;

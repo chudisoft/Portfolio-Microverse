@@ -1,16 +1,16 @@
-let nav_button = document.querySelector(".menubar");
-let nav_list = document.querySelector(".nav-items");
-let nav_close = document.querySelector("#nav-close");
-let menuitems = Array.from(document.querySelectorAll(".menu-items"));
+const navButton = document.querySelector('.menubar');
+const navList = document.querySelector('.nav-items');
+const navClose = document.querySelector('#nav-close');
+const menuitems = Array.from(document.querySelectorAll('.menu-items'));
 
-nav_button.addEventListener('click', () => {
-    nav_list.classList.toggle('show');
+navButton.addEventListener('click', () => {
+    navList.classList.toggle('show');
 });
-nav_close.addEventListener('click', () => {
-    nav_list.classList.toggle('show');
+navClose.addEventListener('click', () => {
+    navList.classList.toggle('show');
 });
-menuitems.forEach((item)=>{
+menuitems.forEach((item) => {
     item.addEventListener('click', () => {
-        nav_list.classList.remove('show');
+        navList.classList.remove('show');
     });
-})
+});

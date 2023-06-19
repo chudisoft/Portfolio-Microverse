@@ -95,14 +95,17 @@ button:disabled {
   height: 100vh;
   display: flex;
   flex-direction: column;
-  padding-top: 3em;
   z-index: 10001;
   padding-left: 0.5em;
   padding-top: 2em;
 }
 
+header > nav > a:hover {
+  text-decoration: underline;
+}
+
 .nav-items.show > a {
-  font-family: 'Poppins';
+  font-family: 'Poppins', serif;
   font-style: normal;
   font-weight: 600;
   font-size: 32px;
@@ -121,10 +124,6 @@ button:disabled {
 
 h1 {
   color: #1193f6;
-}
-
-header > nav > a:hover {
-  text-decoration: underline;
 }
 
 .menubar {
