@@ -37,6 +37,7 @@ body {
 }
 
 .modal-container {
+  flex-wrap: wrap;
   background-color: #fff;
   color: #000;
   padding: 1em;
@@ -69,8 +70,7 @@ body {
 }
 
 #work-sample-image {
-  width: 100%;
-  max-width: 25em;
+  max-width: 100%;
 }
 
 ul {
