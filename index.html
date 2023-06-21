@@ -33,6 +33,62 @@
       </nav>
   </header>
   <main>
+    <section>
+      <div class="modal">
+        <div class="modal-container">
+          <div class="modal-header">
+            <img id="modal-close" class="modal-close" title="Close"
+              src="assets/images/icons/Icon - Cancel.png" alt="modal close" srcset="">
+            <h2 id="modal-header"></h2>
+          </div>
+          <div>
+            <ul class="flex-list project-date-list">
+              <li><h5 id="client">CANOPY</h5></li>
+              <li>
+                <img src="assets/images/icons/Counter.png" 
+                  alt="circle"/>
+              </li>
+              <li><label id="role">Back End Dev</label></li>
+              <li>
+                <img src="assets/images/icons/Counter.png" 
+                  alt="circle"/>
+              </li>
+              <li><label id="year-label">2015</label></li>
+            </ul>
+          </div>
+          <img id="work-sample-image" class="project-img" 
+            src="assets/images/samples/Snapshoot Portfolio(1).png" 
+            alt="Portfolio 1" />
+          <div class="d-md-flex">
+            <div class="d-70">
+              <p id="work-description" class="project-description">
+                A daily selection of privately personalized reads; 
+                no accounts or sign-ups required.
+              </p>
+            </div>
+            <div class="d-30">
+              <ul id="tech-list" class="project-button-group">
+                <li>
+                  <span>
+                    HTML
+                  </span>
+                </li>
+              </ul>
+              <div class="d-flex">
+                <a id="btn-see-live" href="#" class="see-live project-button">
+                  See Live
+                  <img src="assets/images/icons/Icon - Export.png" alt="See Live Icon">
+                </a>
+                <a id="btn-see-source" href="#" class="see-source project-button">
+                  See Source
+                  <img src="assets/images/icons/Icon -GitHub.png" alt="See Source Icon">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <section id="welcome">
       <div class="home-background">
         <div class="content flex-container">
@@ -138,8 +194,7 @@
               </li>
             </ul>
             <div>
-              <button class="project-button" type="button" title="See project"
-                onclick="return;">
+              <button id="see-project-btn-1" class="project-button" type="button" title="See project">
                 See project
               </button>
             </div>
@@ -207,8 +262,7 @@
               </li>
             </ul>
             <div>
-              <button class="project-button" type="button" title="See project"
-                onclick="return;">
+              <button id="see-project-btn-2" class="project-button" type="button" title="See project">
                 See project
               </button>
             </div>
@@ -279,8 +333,8 @@
               </li>
             </ul>
             <div>
-              <button class="project-button" type="button" title="See project"
-                onclick="return;">
+              <button id="see-project-btn-3" class="project-button" 
+                type="button" title="See project">
                 See project
               </button>
             </div>
@@ -349,8 +403,8 @@
               </li>
             </ul>
             <div>
-              <button class="project-button" type="button" title="See project"
-                onclick="return;">
+              <button id="see-project-btn-4" class="project-button" 
+                type="button" title="See project">
                 See project
               </button>
             </div>
@@ -507,6 +561,6 @@
     </section>
   </main>
   <footer></footer>
-  <script src="/assets/js/script.js"></script>
+  <script src="./assets/js/script.js" type="application/javascript"></script>
 </body>
 </html>
