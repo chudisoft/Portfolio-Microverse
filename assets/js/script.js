@@ -1,4 +1,5 @@
 // const body = document.querySelector('body');
+const contactForm = document.querySelector('.contact-form');
 const navButton = document.querySelector('.menubar');
 const navList = document.querySelector('.nav-items');
 const navClose = document.querySelector('#nav-close');
@@ -12,7 +13,6 @@ const seeProjectBtn4 = document.querySelector('#see-project-btn-4');
 const modal = document.querySelector('.modal');
 const modalClose = document.querySelector('.modal-close');
 const menuitems = Array.from(document.querySelectorAll('.menu-items'));
-
 document.onkeydown = function (evt) {
     evt = evt || window.event;
     let isEscape = false;
@@ -25,7 +25,6 @@ document.onkeydown = function (evt) {
         modal.classList.toggle('show');
     }
 };
-
 navButton.addEventListener('click', () => {
     navList.classList.toggle('show');
 });
@@ -37,11 +36,9 @@ menuitems.forEach((item) => {
         navList.classList.remove('show');
     });
 });
-
 modalClose.addEventListener('click', () => {
     modal.classList.toggle('show');
 });
-
 const projects = [
     {
         name: 'Tonic',
@@ -88,7 +85,6 @@ const projects = [
         year: '2018',
     },
 ];
-
 function ShowModal(index) {
     modal.classList.toggle('show');
     const modalHeader = document.querySelector('#modal-header');
@@ -98,13 +94,11 @@ function ShowModal(index) {
     const btnSeeLive = document.querySelector('#btn-see-live');
     const btnSeeSource = document.querySelector('#btn-see-source');
     const project = projects[index];
-
     modalHeader.textContent = project.name;
     workSampleImage.setAttribute('src', project.featuredImage);
     workDescription.textContent = project.description;
     btnSeeLive.setAttribute('href', project.link);
     btnSeeSource.setAttribute('href', project.source);
-
     techList.innerHTML = '';
     project.tech.forEach((tech) => {
         const li = document.createElement('li');
@@ -113,24 +107,28 @@ function ShowModal(index) {
         li.appendChild(span);
         techList.appendChild(li);
     });
-
     client.textContent = project.client;
     role.textContent = project.role;
     yearLabel.textContent = project.year;
 }
-
 seeProjectBtn1.addEventListener('click', () => {
     ShowModal(0);
 });
-
 seeProjectBtn2.addEventListener('click', () => {
     ShowModal(1);
 });
-
 seeProjectBtn3.addEventListener('click', () => {
     ShowModal(2);
 });
-
 seeProjectBtn4.addEventListener('click', () => {
     ShowModal(3);
+});
+contactForm.addEventListener('submit', (event) => {
+    const email = document.getElementById('email');
+    const warning = document.querySelector('.warning');
+    if (email.value.toLowerCase() !== email.value) {
+        event.preventDefault();
+        warning.innerText = 'Email must be lower';
+        email.value = email.value.toLowerCase();
+    }
 });
