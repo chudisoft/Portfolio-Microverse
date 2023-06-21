@@ -605,6 +605,11 @@ main {
   width: 100%;
 }
 
+.warning {
+  color: #ac0b0b;
+  font-size: larger;
+}
+
 .shake {
   animation-name: move;
   animation-duration: 2s;

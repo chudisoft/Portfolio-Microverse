@@ -89,6 +89,10 @@
     width: 30%;
   }
 
+  .warning {
+    text-align: center;
+  }
+
   .navbar {
     padding: 1em 10%;
   }
