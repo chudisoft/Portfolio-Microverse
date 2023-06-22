@@ -123,12 +123,47 @@ seeProjectBtn3.addEventListener('click', () => {
 seeProjectBtn4.addEventListener('click', () => {
     ShowModal(3);
 });
+const email = document.getElementById('email');
+const warning = document.querySelector('.warning');
+const userName = document.querySelector('#name');
+const message = document.querySelector('#message');
+const formDatakey = 'formData';
+
 contactForm.addEventListener('submit', (event) => {
-    const email = document.getElementById('email');
-    const warning = document.querySelector('.warning');
     if (email.value.toLowerCase() !== email.value) {
         event.preventDefault();
         warning.innerText = 'Email must be lower';
         email.value = email.value.toLowerCase();
     }
+});
+
+let formObject = {
+  userName: '',
+  email: '',
+  message: '',
+};
+
+function SaveFormData() {
+  formObject.userName = userName.value;
+  formObject.email = email.value;
+  formObject.message = message.value;
+  localStorage.setItem(formDatakey, JSON.stringify(formObject));
+}
+
+email.addEventListener('input', SaveFormData);
+userName.addEventListener('input', SaveFormData);
+message.addEventListener('input', SaveFormData);
+
+contactForm.addEventListener('reset', () => {
+  localStorage.removeItem(formDatakey);
+});
+
+window.addEventListener('load', () => {
+  const dataStored = localStorage.getItem(formDatakey);
+  if (dataStored !== null) {
+    formObject = JSON.parse(dataStored);
+    email.value = formObject.email;
+    userName.value = formObject.userName;
+    message.value = formObject.message;
+  }
 });

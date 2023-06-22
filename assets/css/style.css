@@ -568,6 +568,9 @@ main {
 
 .form-footer {
   width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5em;
 }
 
 .form-submit-button {
