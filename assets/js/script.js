@@ -13,6 +13,27 @@ const seeProjectBtn4 = document.querySelector('#see-project-btn-4');
 const modal = document.querySelector('.modal');
 const modalClose = document.querySelector('.modal-close');
 const menuitems = Array.from(document.querySelectorAll('.menu-items'));
+
+document.addEventListener('DOMContentLoaded', function () {
+    var stackAreas = document.querySelectorAll('.stack-area');
+
+    stackAreas.forEach(function(stackArea) {
+        stackArea.addEventListener('click', function() {
+            var languageElement = this.querySelector('.languages');
+            var img = this.querySelector('.stack-img');
+            if (languageElement) {
+                languageElement.classList.toggle('hidden');
+                if(languageElement.classList.contains('hidden')) {
+                    img.src = 'assets/images/icons/arrowright.png';
+                } else {
+                    img.src = 'assets/images/icons/arrowdown.png';
+                }
+            }
+        });
+    });
+});
+
+  
 document.onkeydown = function (evt) {
     evt = evt || window.event;
     let isEscape = false;
@@ -41,48 +62,73 @@ modalClose.addEventListener('click', () => {
 });
 const projects = [
     {
-        name: 'Tonic',
-        description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-        featuredImage: 'assets/images/samples/desktop/Snapshoot-Portfolio1.png',
+        name: 'Music Collection',
+        description: `
+            This is a web application to check a list of music by a music category, 
+            grouping the result by artist name and displaying the number of views/plays.
+
+            This project was created as part of the Microverse React redux capstone project. 
+            It allows the student to showcase his talent with HTML, CSS, React, and Redux. 
+            It also allows the student to showcase what they can do to the future employee.
+        `,
+        featuredImage: 'assets/images/samples/music-collection.png',
         tech: ['HTML', 'CSS', 'JavaScript'],
         client: 'CANOPY',
         role: 'Back End Dev',
         year: '2015',
-        link: '#',
-        source: '#',
+        link: 'https://jazzy-marzipan-52623a.netlify.app/',
+        source: 'https://github.com/chudisoft/music-collection',
     },
     {
-        name: 'Multi-Post Stories',
-        description: 'Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.',
-        featuredImage: 'assets/images/samples/desktop/Snapshoot-Portfolio2.png',
-        tech: ['HTML', 'Ruby on rails', 'CSS', 'JavaScript'],
-        link: '#',
+        name: 'Rayzer Business Solution',
+        description: `
+            At Rayzer Business Solution, I handle the role of a full-stack developer. I
+            created and still maintain the company's websites, desktop applications, and
+            web servers. I am currently working on the company's mobile application for a
+            point of sale using .net MAUI. The application that I created here is being used
+            by over 20 clients, with the customer base growing exponentially.
+        `,
+        featuredImage: 'assets/images/samples/rayzerbusiness App Dashboard.png',
+        tech: ['C#', 'Python', 'HTML', 'CSS', 'JavaScript'],
+        link: 'https://rayzerbusiness.com/',
         source: '#',
-        client: 'FACEBOOK',
+        client: 'Rayzer',
         role: 'Full Stack Dev',
         year: '',
     },
     {
-        name: 'Facebook 360',
-        description: 'Exploring the future of media in Facebook\'s first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR',
-        featuredImage: 'assets/images/samples/desktop/Snapshoot-Portfolio3.png',
+        name: 'Budget Manager',
+        description: `
+            This Ruby on Rails project is about building a mobile web application where you can manage
+            your budget, and have a list of transactions associated with a category so that you can see
+            how much money you spent and on what.
+            This project was created as part of the Microverse Ruby on Rails capstone project.
+            It allows the student to showcase his talent with ruby, rails, and RSpec.
+            It also allows the student to showcase what they can do to the future employee.
+        `,
+        featuredImage: 'assets/images/samples/Budget Manager.png',
         tech: ['HTML', 'Ruby on rails', 'CSS', 'JavaScript'],
-        link: '#',
-        source: '#',
-        client: 'FACEBOOK',
+        link: 'https://budget-tracker-rv3z.onrender.com/',
+        source: 'https://github.com/chudisoft/budget-tracker',
+        client: 'Microverse',
         role: 'Full Stack Dev',
-        year: '2015',
+        year: '2024',
     },
     {
-        name: 'Uber Navigation',
-        description: 'A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.',
-        featuredImage: 'assets/images/samples/desktop/Snapshoot-Portfolio4.png',
-        tech: ['HTML', 'Ruby on rails', 'CSS', 'JavaScript'],
+        name: 'Bike Reservation',
+        description: `
+            Bike Reserves is an app for booking motorcycles. You can sign up and add your own motorcycles to the app.
+            Once you're signed up, you can reserve motorcycles for specific dates and cities.
+            This app is made using React and Rails, making it easy to use.
+            It's a handy tool for people who want to book motorcycles.
+        `,
+        featuredImage: 'assets/images/samples/Bike Reserves.png',
+        tech: ['Ruby on rails', 'HTML', 'CSS', 'JavaScript', 'React'],
         link: '#',
-        source: '#',
-        client: 'Uber',
-        role: 'Lead Developer',
-        year: '2018',
+        source: 'https://github.com/chudisoft/Book-an-Appointment',
+        client: 'Microverse',
+        role: 'Backend Developer',
+        year: '2024',
     },
 ];
 function ShowModal(index) {

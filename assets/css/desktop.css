@@ -144,7 +144,7 @@
   .languages > .grid-container {
     display: block;
     margin-right: 0.5em;
-    min-width: 7em;
+    min-width: fit-content;
   }
 
   .contact-background {
